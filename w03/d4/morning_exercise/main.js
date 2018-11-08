@@ -9,7 +9,9 @@ const quotes = [
 ];
 
 function randomQuote(){
-
+  let text = document.getElementById('quote');
+  let randomSelect = quotes[Math.floor(Math.random()*quotes.length)];
+  text.innerHTML = randomSelect;
 }
 
 let button = document.querySelector('button');
