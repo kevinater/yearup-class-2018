@@ -7,6 +7,7 @@ axios.get(url)
     console.log(productImage.data.products[0].images[0].src);
     console.log(productImage.data.products[0].images[1].src);
     console.log(productImage.data.products[0].images[2].src);
+    console.log(productImage);
 
     let image_1 = productImage.data.products[0].images[0].src;
     let image_2 = productImage.data.products[0].images[1].src;
@@ -21,9 +22,30 @@ axios.get(url)
     let image1 = document.getElementById('one');
     let image2 = document.getElementById('two');
     let image3 = document.getElementById('three');
+    let image4 = document.getElementById('four');
+    let image5 = document.getElementById('five');
+    let image6 = document.getElementById('six');
+    let image7 = document.getElementById('seven');
+    let image8 = document.getElementsById('eight');
+    let image9 = document.getElementsByClassName('nine');
+
+    function () {
+      let button = document.getElementById('button');
+      for (let i = 0; i < image_array.length; i++) {
+        
+      }
+
+    }
 
 
 
+
+
+
+
+  function addSrc () {
+
+  }
     image1.src = image_1;
     image2.src = image_2;
     image3.src = image_3;

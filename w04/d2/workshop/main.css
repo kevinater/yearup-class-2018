@@ -32,17 +32,12 @@ body {
 
 }
 
-#one {
-  width: 270px;
+.imagesize {
   height: 270px;
+  width: 270px;
 }
 
-#two {
-  width: 270px;
-  height: 270px;
-}
-
-#three {
-  width: 270px;
-  height: 270px;
+#btn {
+position: absolute;
+margin-left: 15px;
 }
