@@ -1,4 +1,5 @@
 require 'faker'
+require 'pry'
 require './student'
 require './classroom'
 require './grade'
@@ -15,10 +16,10 @@ def genStudent
   s.reportcard.addGrade(Grade.new("history", rand(0..100)))
   s.reportcard.addGrade(Grade.new("english", rand(0..100)))
   s.reportcard.addGrade(Grade.new("science", rand(0..100)))
-  s
+  
 end
 
-# Generate our students
+# Generate our students into each classroom
 1..25.times do |i|
   @A.addStudent(genStudent())
 end
@@ -33,29 +34,33 @@ end
 end
 
 # Check the rosters
-# @A.roster
-# puts ""
-# @B.roster
-# puts ""
-# @C.roster
-# puts ""
-# @D.roster
-# puts ""
+@A.roster
+puts ""
+@B.roster
+puts ""
+@C.roster
+puts ""
+@D.roster
+puts ""
 
 
 ############################################################
 # CHALLENGE 1
-
+#Find
 # def findFailing(classroom)
-#   classroom.students.each { |key,value|
+#   for classroom.students.each do |key,value|
 #     total = 0
-#     value.reportard.grades.each do |key, value|
-#       total = total + value.grade
-#     end
-#     if total > 200:
+#     value.reportcard.grades.each do |key, value|
+#       total = total + value.grade 
+  
+#     if total > 200
 #       puts "PASS"
-#   }
+#     end
+  
 # end
+
+
+
 
 # findFailing @A
 

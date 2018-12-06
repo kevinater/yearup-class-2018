@@ -1,5 +1,6 @@
-class Reportcard
 
+class Reportcard
+  attr_accessor :grades
   def initialize
     @grades = {}
   end
@@ -7,8 +8,8 @@ class Reportcard
   def addGrade(grade)
     if @grades[grade.subject]
       raise "Sorry, you cannot add or change #{subject} because it was already entered."
-    end
-    @grades[grade.subject]
+    else
+    @grades[grade.subject] = grade
   end
 
   def printCard
